@@ -1,21 +1,22 @@
-from __future__ import print_function, division
-from matplotlib import use
-use('TkAgg')
+from __future__ import division, print_function
+
+#from matplotlib import use
+#use('TkAgg')
 
 from copy import deepcopy
-from numpy import abs, arctan2, array, atleast_2d, ceil, cos, eye, floor, hstack, inf, nan, pi, sin, vstack, zeros
-from numpy.random import normal, uniform
-from pandas import DataFrame
-from pprint import pprint
-from matplotlib.animation import FuncAnimation
-from matplotlib.gridspec import GridSpec
-from matplotlib.patches import Ellipse
-from matplotlib.pyplot import figure, imshow, subplot
-from Kalman import ExtendedKalmanFilter as EKF
 from Helpy.Geometry2D import euclidean_distance, euclidean_distance_gradients, ray_angle, ray_angle_gradients,\
     angular_difference
 from Helpy.Visualizations import gaussian_confidence_ellipse_parameters
 from Helpy.zzz import within_range
+from Kalman import ExtendedKalmanFilter as EKF
+from matplotlib.animation import FuncAnimation
+from matplotlib.gridspec import GridSpec
+from matplotlib.patches import Ellipse
+from matplotlib.pyplot import figure, imshow, subplot
+from numpy import abs, arctan2, array, atleast_2d, ceil, cos, eye, floor, hstack, inf, nan, pi, sin, vstack, zeros
+from numpy.random import normal, uniform
+from pandas import DataFrame
+from pprint import pprint
 
 
 class Marking:
