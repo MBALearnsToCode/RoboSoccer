@@ -4,10 +4,10 @@ from __future__ import division, print_function
 #use('TkAgg')
 
 from copy import deepcopy
-from Helpy.Geometry2D import euclidean_distance, euclidean_distance_gradients, ray_angle, ray_angle_gradients,\
+from HelpyFun.Geometry2D import euclidean_distance, euclidean_distance_gradients, ray_angle, ray_angle_gradients,\
     angular_difference
-from Helpy.Visualizations import gaussian_confidence_ellipse_parameters
-from Helpy.zzz import within_range
+from HelpyFun.Visualizations import gaussian_confidence_ellipse_parameters
+from HelpyFun.zzz import within_range
 from Kalman import ExtendedKalmanFilter as EKF
 from matplotlib.animation import FuncAnimation
 from matplotlib.gridspec import GridSpec
